@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="Love-letter.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>To My Lovely Baby.</strong>
+                        <p>
+                            Happy Birthday My love❤.
+                            In short and straight, I love You, My soulmate , My partner , My heart , My Love , My
+                            Baby🌹.
+                            Three Birthdays , One as a freind , Second as a boyfriend and Third as Love. I hope one day
+                            in future I can celebrate it as your husband.❤👫🌹.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
